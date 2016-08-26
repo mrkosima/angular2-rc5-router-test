@@ -2,6 +2,9 @@
   "name": "angular-rc5-router-test",
   "version": "0.0.0",
   "license": "MIT",
+  "engines": {
+    "node": "6.2.1"
+  }
   "angular-cli": {},
   "scripts": {
     "start": "ng serve",
