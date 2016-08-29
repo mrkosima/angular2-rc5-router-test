@@ -1,0 +1,15 @@
+<div style="padding: 20px; margin:5px; background: rgba(150, 150, 150, 0.3)">
+  <h3>Category</h3>
+  <button (click)="addWidget()">Add Widget</button>
+  <router-outlet></router-outlet>
+
+  <div>
+    <dynamic-widget-outlet *ngFor="let outlet of outlets"
+        style="display:inline-block;width: 30%;"
+        name="{{outlet}}"></dynamic-widget-outlet>
+  </div>
+
+  <div *ngIf="loading">
+    <h5>Loading...</h5>
+  </div>
+</div>

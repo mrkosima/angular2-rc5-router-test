@@ -1,0 +1,17 @@
+.background {
+	/*background: rgba(240,0,240,0.3);*/
+	background: #444;
+	color:#eee;
+	padding:4px;
+	margin:4px;
+}
+nav a {
+	padding: 1px 2px;
+	font-size: 75%;
+	text-decoration: none;
+	margin-top: 6px;
+	display: inline-block;
+	background-color: #eeeeee;
+	color:#607D8B;
+	border-radius: 1px;
+}

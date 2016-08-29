@@ -1,0 +1,18 @@
+<h2>DASHBOARD</h2>
+
+<div style="margin-bottom: 5px;">
+  <button (click)="debugMe()">Debug</button>
+</div>
+<div style="margin-bottom: 5px;">
+  <button (click)="addCategory()">Add Category</button>
+</div>
+<router-outlet></router-outlet>
+<router-outlet name="wild"></router-outlet>
+
+<div *ngFor="let outlet of outlets">
+  <dynamic-category-outlet name="{{outlet}}"></dynamic-category-outlet>
+</div>
+
+<div *ngIf="loading">
+  <h5>Loading...</h5>
+</div>

@@ -1,16 +1,13 @@
 import { Routes, RouterModule }   from '@angular/router';
 
-import { loginRoutes,
-         authProviders }  from './login.routing';
+import {
+    loginRoutes,
+    authProviders
+}  from './login.routing';
 
 import { CanDeactivateGuard } from './can-deactivate-guard.service';
 
 const crisisCenterRoutes: Routes = [
-  {
-    path: '',
-    redirectTo: '/heroes',
-    pathMatch: 'full'
-  },
   {
     path: 'crisis-center',
     loadChildren: 'app/crisis-center/crisis-center.module#CrisisCenterModule'
@@ -19,7 +16,12 @@ const crisisCenterRoutes: Routes = [
 
 const appRoutes: Routes = [
   ...loginRoutes,
-  ...crisisCenterRoutes
+  ...crisisCenterRoutes,
+  {
+    path: '',
+    pathMatch: 'full',
+    redirectTo: '/dashboard'
+  }
 ];
 
 export const appRoutingProviders: any[] = [
@@ -27,11 +29,4 @@ export const appRoutingProviders: any[] = [
   CanDeactivateGuard
 ];
 
-export const routing = RouterModule.forRoot(appRoutes);
-
-
-/*
-Copyright 2016 Google Inc. All Rights Reserved.
-Use of this source code is governed by an MIT-style license that
-can be found in the LICENSE file at http://angular.io/license
-*/
+export const routing = RouterModule.forRoot(appRoutes, {useHash: true});
