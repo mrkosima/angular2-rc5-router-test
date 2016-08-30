@@ -1,10 +1,5 @@
-import { Routes, RouterModule }   from '@angular/router';
-
-import {
-    loginRoutes,
-    authProviders
-}  from './login.routing';
-
+import { Routes, RouterModule } from '@angular/router';
+import { loginRoutes, authProviders } from './login.routing';
 import { CanDeactivateGuard } from './can-deactivate-guard.service';
 
 const crisisCenterRoutes: Routes = [
@@ -20,7 +15,7 @@ const appRoutes: Routes = [
   {
     path: '',
     pathMatch: 'full',
-    redirectTo: '/dashboard'
+    redirectTo: '/badges'
   }
 ];
 

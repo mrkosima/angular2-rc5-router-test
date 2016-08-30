@@ -1,6 +1,7 @@
 import { Routes, RouterModule } from '@angular/router';
 import { DashboardComponent } from '../dashboard/dashboard.component';
-import { EmptyComponent } from './empty.component';
+import { EmptyComponent } from '../shared/empty.component';
+import { TestComponent } from '../shared/test.component';
 
 export const dashboardRoutes: Routes = [
   {
@@ -9,9 +10,13 @@ export const dashboardRoutes: Routes = [
     children: [
       {
         path: '',
-        pathMatch:'full',
         component: EmptyComponent,
-      }
+      },
+      {
+        path: 'test',
+        outlet: 'outlet_test',
+        component: TestComponent
+      },
     ]
   },
 ];

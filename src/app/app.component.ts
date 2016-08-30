@@ -11,16 +11,16 @@ import { Component }          from '@angular/core';
       <a routerLink="/crisis-center/admin" routerLinkActive="active">Crisis Admin</a>
       <a routerLink="/login" routerLinkActive="active">Login</a>
       <a routerLink="/dashboard" routerLinkActive="active">* Dashboard</a>
+      <a routerLink="/badges" routerLinkActive="active">* Lazy Badges</a>
     </nav>
     <router-outlet></router-outlet>
-  `
+  `,
 })
 export class AppComponent {
 }
 
-
 /*
-Copyright 2016 Google Inc. All Rights Reserved.
-Use of this source code is governed by an MIT-style license that
-can be found in the LICENSE file at http://angular.io/license
-*/
+ Copyright 2016 Google Inc. All Rights Reserved.
+ Use of this source code is governed by an MIT-style license that
+ can be found in the LICENSE file at http://angular.io/license
+ */

@@ -1,0 +1,17 @@
+.background {
+	background: rgba(30, 70, 70, 0.6);
+	color: #eee;
+	padding: 7px;
+	margin: 7px;
+}
+
+nav a {
+	padding: 1px 2px;
+	font-size: 75%;
+	text-decoration: none;
+	margin-top: 6px;
+	display: inline-block;
+	background-color: #eee;
+	color: #607d8b;
+	border-radius: 1px;
+}

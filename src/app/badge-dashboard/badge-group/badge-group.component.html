@@ -1,0 +1,17 @@
+<div style="padding: 20px; margin:5px; background: rgba(150, 150, 150, 0.3)">
+  <h3>Badge Group {{id}} - Not works...</h3>
+
+  <div style="margin-bottom: 5px;">
+    <button (click)="addBadge()">Add Badge</button>
+  </div>
+
+  <router-outlet></router-outlet>
+
+  <div *ngFor="let outlet of outlets">
+    <dynamic-router-outlet styleClass="{{outlet.styleClass}}" name="{{outlet.name}}"></dynamic-router-outlet>
+  </div>
+
+  <div *ngIf="loading">
+    <h5>Loading...</h5>
+  </div>
+</div>

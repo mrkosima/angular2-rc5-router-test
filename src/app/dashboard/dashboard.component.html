@@ -7,7 +7,8 @@
   <button (click)="addCategory()">Add Category</button>
 </div>
 <router-outlet></router-outlet>
-<router-outlet name="wild"></router-outlet>
+
+<router-outlet name="outlet_test"></router-outlet>
 
 <div *ngFor="let outlet of outlets">
   <dynamic-category-outlet name="{{outlet}}"></dynamic-category-outlet>

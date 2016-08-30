@@ -1,5 +1,5 @@
 import { Routes } from '@angular/router';
-import { EmptyComponent } from '../empty.component';
+import { EmptyComponent } from '../../shared/empty.component';
 
 export const categoryChildrenRoutes: Routes = [
   {

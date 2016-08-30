@@ -7,14 +7,19 @@ import { HeroesModule } from './heroes/heroes.module';
 import { LoginComponent } from './login.component';
 import { DialogService } from './dialog.service';
 import { DashboardModule } from './dashboard/dashboard.module';
+import { SharedModule } from './shared/shared.module';
+import { BadgeDashboardModule } from './badge-dashboard/badge-dashboard.module';
 
 @NgModule({
   imports: [
     BrowserModule,
     FormsModule,
     routing,
+    SharedModule,
+
     HeroesModule,
-    DashboardModule
+    DashboardModule,
+    BadgeDashboardModule,
   ],
   declarations: [
     AppComponent,
